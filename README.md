@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# TweetX - Social Media Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TweetX is a social media platform that allows users to share short 2-sentence text posts, follow other users, and view a personalized feed based on the posts from the users they follow.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Design Choices](#design-choices)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## Features
+- User Sign Up/Login
+- Post 2-sentence text tweets
+- View own list of posts
+- See a list of other users
+- Follow other users
+- Personalized feed showing posts from followed users
 
-### `npm start`
+## Technologies Used
+- Frontend: React
+- Backend: Firebase (Realtime Database, Authentication)
+- State Management: React Context API
+- Styling: Tailwind CSS
+- Other: Firebase Hosting, React Router
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+1. Clone the repository: `git clone https://github.com/inishantxchandel/tweetx.git`
+2. Navigate to the project directory: `cd tweetx`
+3. Install dependencies: `npm install`
+4. Set up Firebase:
+   - Create a Firebase project: [Firebase Console](https://console.firebase.google.com/)
+   - Add your Firebase configuration in `src/config/firebase.js`
+5. Run the application: `npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+- Visit [TweetX](https://your-tweetx-app.firebaseapp.com) and sign up or log in.
+- Post your 2-sentence tweets.
+- Explore other users and follow them.
+- View your own list of posts and personalized feed.
 
-### `npm test`
+## Project Structure
+- `src/components`: React components
+- `src/config`: Configuration files
+- `src/pages`: React page components
+- `src/services`: Firebase services
+- `src/styles`: Stylesheets
+- `public`: Static assets
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design Choices
+- **React for Frontend**: Chosen for its component-based structure, making it easy to manage and scale.
+- **Firebase for Backend**: Utilized for real-time database functionality, authentication, and hosting.
+- **Tailwind CSS for Styling**: Allowed for rapid development and easy customization.
+- **React Context API for State Management**: Simplified state management within the React application.
 
-### `npm run build`
+## Contributing
+Feel free to contribute to the project by opening issues or creating pull requests. Follow the [CONTRIBUTING.md](CONTRIBUTING.md) guidelines.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the [MIT License](LICENSE).
