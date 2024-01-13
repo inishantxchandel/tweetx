@@ -84,12 +84,16 @@ const UserList = ({ userData }) => {
               <p className="text-gray-400 font-light">Following: {followingCount[index]}</p>
             </div>
           </div>
+          {isFollowedStatus[index] ?
+            <button
+            className={`text-gray-400 px-6 py-2  rounded-md font-medium`}>
+            Following
+          </button>:
           <button
-            disabled={isFollowedStatus[index]}
-            onClick={() => followUser(userId, user.uid, index)}
-            className={` ${isFollowedStatus[index] ? 'text-gray-900 font-light ' : 'bg-rose-400 hover:bg-rose-500'} px-6 py-2 text-white rounded-md font-medium`}>
-            {isFollowedStatus[index] ? 'Following' : 'Follow'}
-          </button>
+          onClick={() => followUser(userId, user.uid,index)}
+          className={`text-white bg-rose-400 px-6 py-2  rounded-md font-medium`}>
+          Follow
+        </button>}
         </div>
       ))}
     </div>
